@@ -1,0 +1,13 @@
+# Ignore environment and cache files
+.env
+__pycache__/
+myvenv/
+*.mp3
+*.wav
+*.pkl
+
+# Ignore specific files and directories
+User_Data/
+
+speech_cache/
+selenium/

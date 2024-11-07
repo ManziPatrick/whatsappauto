@@ -182,9 +182,6 @@ def search_wolframalpha(keyword=''):
 def query_openai(prompt = ""):
     openai.organization = os.environ['OPENAI_ORG']
     openai.api_key = os.environ['OPENAI_API_KEY']
-
-    # Temperature is a measure of randonmess
-    # Max_tokens is the number of tokens to generate
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
